@@ -44,14 +44,6 @@ class EntryDetail extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: white,
-    padding: 15,
-  },
-})
-
 function mapStateToProps (state, { navigation }) {
   const { entryId } = navigation.state.params
 
@@ -73,6 +65,14 @@ function mapDispatchToProps (dispatch, { navigation }) {
     goBack: () => navigation.goBack(),
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: white,
+    padding: 15,
+  },
+})
 
 export default connect(
   mapStateToProps,
